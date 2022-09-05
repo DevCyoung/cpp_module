@@ -47,6 +47,7 @@ void    Phonebook::add(void)
 {
     if (idx >= 8)
         idx = 0;
+
     std::cout << "[First Name] : ";
     contacts[idx].set_first_name();
     std::cout << "[Last Name] : ";
