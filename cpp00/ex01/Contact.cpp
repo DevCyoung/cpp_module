@@ -25,28 +25,29 @@ std::string Contact::get_darkest_secret()
 	return darkest_secret;
 }
 
-void	Contact::set_first_name(std::string first_name)
+void	Contact::set_first_name()
 {
-	this->first_name = first_name;
+	std::getline(std::cin, first_name);
 }
 
-void	Contact::set_last_name(std::string last_name)
+void	Contact::set_last_name()
 {
-	this->last_name = last_name;
+	std::getline(std::cin, last_name);
+	
 }
 
-void	Contact::set_nick_name(std::string nick_name)
+void	Contact::set_nick_name()
 {
-	this->nick_name = nick_name;
+	std::getline(std::cin, nick_name);
 }
 
-void 	Contact::set_darkest_secret(std::string darkest_secret)
+void 	Contact::set_darkest_secret()
 {
-	this->darkest_secret = darkest_secret;
+	std::getline(std::cin, darkest_secret);
 }
 
-void	Contact::set_phone_number(std::string phone_number)
+void	Contact::set_phone_number()
 {
-	this->phone_numbeer = phone_numbeer;
+	std::getline(std::cin, phone_numbeer);
 }
 
