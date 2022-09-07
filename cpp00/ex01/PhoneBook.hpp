@@ -14,6 +14,5 @@ public:
     Phonebook();
     void	add(void);
     void	search(void);
-    void	display_contacts(void);
 };
 #endif
