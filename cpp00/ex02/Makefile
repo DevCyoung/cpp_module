@@ -2,7 +2,9 @@ NAME = megaphone
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRCS = megaphone.cpp
+SRCS =	Account.cpp\
+		test.cpp\
+
 OBJS = $(SRCS:%.cpp=%.o)
 
 all : $(NAME)

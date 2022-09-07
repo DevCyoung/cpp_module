@@ -1,4 +1,5 @@
 #include "PhoneBook.hpp"
+#include <algorithm>
 
 int main(void)
 {
