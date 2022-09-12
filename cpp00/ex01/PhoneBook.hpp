@@ -7,7 +7,6 @@ class Phonebook
 {
 private:
     Contact			contacts[8];
-    Contact			my_info;
     size_t			idx;
     size_t			size;
 public:

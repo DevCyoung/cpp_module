@@ -1,4 +1,4 @@
-NAME = megaphone
+NAME = bank
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 

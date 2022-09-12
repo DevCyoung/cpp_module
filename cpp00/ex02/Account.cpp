@@ -24,9 +24,31 @@ Account::~Account(void)
 	<< "amount:" << _amount << ';' << "closed" << std::endl;
 }
 
+static void printf_time(int first, int time, int base)
+{
+	if (time <= base)
+		std::cout << first;
+	std::cout << time;
+}
+
 void Account::_displayTimestamp(void)
 {
-	std::cout << "[19920104_091532]";
+	time_t timer = time(NULL);
+	struct tm cur_tm;
+	
+	localtime_r(&timer, &cur_tm);
+	
+	std::cout << "[";
+	std::cout << cur_tm.tm_year + 1900;
+	printf_time(0, cur_tm.tm_mon + 1, 10);
+	printf_time(0, cur_tm.tm_mday   , 10);
+	std::cout << "_";
+	printf_time(0, cur_tm.tm_hour   , 10);
+	printf_time(0, cur_tm.tm_min    , 10);
+	printf_time(0, cur_tm.tm_sec    , 10);
+	std::cout << "]";
+	//std::cout << "[19920104_091532]";
+	
 }
 
 int Account::getNbAccounts(void)
