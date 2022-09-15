@@ -2,7 +2,8 @@
 
 int main(void)
 {
-	Zombie yoseo("yoseo");
+	Zombie yoseo;
+	yoseo.set_name("yoseo");
 	yoseo.announce();
 
 	Zombie *youngjae = newZombie("youngjae");
