@@ -5,18 +5,17 @@
 
 int main()
 {
-	HumanA humanA;
 	Weapon weaponA;
 	weaponA.set_type("gun");
-	humanA.set_weapon(weaponA);
+	HumanA humanA(weaponA);
 	humanA.set_name("yoseo");
 
 
-	HumanA humanB;
 	Weapon weaponB;
+	HumanB humanB;
 	weaponB.set_type("sworld");
-	humanA.set_weapon(weaponB);
-	humanA.set_name("juhylee");
+	humanB.set_weapon(weaponB);
+	humanB.set_name("juhylee");
 
 	humanA.attack();
 	humanB.attack();

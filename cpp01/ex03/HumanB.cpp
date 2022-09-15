@@ -5,7 +5,7 @@ HumanB::HumanB()
 {
 }
 
-HumanB::HumanB()
+HumanB::~HumanB()
 {
 }
 

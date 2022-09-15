@@ -1,3 +1,6 @@
+#ifndef HUMANA_HPP
+#define HUMANA_HPP
+
 #include "Weapon.hpp"
 
 class HumanA
@@ -7,9 +10,10 @@ private:
 	std::string name;
 
 public:
-	HumanA();
+	HumanA(const Weapon& weapon);
 	~HumanA();
 	void attack();
-	void set_weapon(Weapon weapon);
-	void set_name(std::string name);
+	void set_weapon(const Weapon& weapon);
+	void set_name(const std::string& name);
 };
+#endif

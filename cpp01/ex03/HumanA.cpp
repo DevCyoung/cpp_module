@@ -1,20 +1,22 @@
 #include "HumanA.hpp"
 #include <iostream>
 
-HumanA::HumanA()
+HumanA::HumanA(const Weapon& weapon)
+{
+	this->weapon = weapon;
+	this->name = "default";
+}
+
+HumanA::~HumanA()
 {
 }
 
-HumanA::HumanA()
-{
-}
-
-void HumanA::set_weapon(Weapon weapon)
+void HumanA::set_weapon(const Weapon& weapon)
 {
 	this->weapon = weapon;
 }
 
-void HumanA::set_name(std::string name)
+void HumanA::set_name(const std::string& name)
 {
 	this->name = name;
 }
