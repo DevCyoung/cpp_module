@@ -1,11 +1,12 @@
-#include <algorithm>
+#include <iostream>
 
 class Weapon
 {
 	private :
-		std::string type;
+		std::string weapon_type;
 	public :
 		Weapon();
-		void set_type(std::string type);
-		std::string& get_type();
+		~Weapon();
+		void set_type(std::string weapon_type);
+		const std::string& get_type();
 };

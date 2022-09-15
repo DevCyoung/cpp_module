@@ -1,5 +1,4 @@
-#include "HumanA.hpp"
-#include <iostream>
+#include "Human.hpp"
 
 HumanA::HumanA()
 {
