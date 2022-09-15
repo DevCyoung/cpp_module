@@ -4,17 +4,26 @@
 
 int main(int argc, char** argv)
 {
-	// if (argc != 4)
-	// {
-	// 	return 1;
-	// }
+	std::ifstream file(argv[1]);
+	std::string str;
 
-	std::string file_type = argv[1];
-	file_type.append(".replace");
+	if (file.is_open())
+	{
+		while (file)
+		{
+			std::string temp;
+			getline(file, temp);
+			str += temp;
+			if (file)
+				str += "\n";
+		}
+	}
+	else
+	{
+		std::cout << "Error" << std::endl;
+		return 0;
+	}
+	std::cout << str;
 
-	FIle *origin = fopen();
-	FIle *dest;
-
-	out.close();
 	return 0;
 }
