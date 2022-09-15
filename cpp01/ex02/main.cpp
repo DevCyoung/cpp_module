@@ -1,7 +1,17 @@
+#include <algorithm>
+#include <iostream>
+
 int main(void)
 {
-	char str[256] = "HI THIS IS BRAIN";
-	char* string_ptr = &str[0];
-	char& string_ref = str;
-	
+	std::string base = "HI THIS IS BRAIN";
+	std::string* stringPTR = &base;
+	std::string& stringREF = base;
+
+	std::cout << &base << std::endl;
+	std::cout << &stringPTR << std::endl;
+	std::cout << &stringREF << std::endl;
+
+	std::cout << base << std::endl;
+	std::cout << *stringPTR << std::endl;
+	std::cout << stringREF << std::endl;
 }
