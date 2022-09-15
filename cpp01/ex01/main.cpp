@@ -10,6 +10,5 @@ int main(void)
 		zombies[i].announce();
 	}
 	delete [] zombies;
-	system("leaks Moar_brainz");
 	return 0;
 }

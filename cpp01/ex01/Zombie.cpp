@@ -2,12 +2,12 @@
 
 Zombie::Zombie()
 {
-	std::cout << "create zombie" << std::endl;
 }
 Zombie::~Zombie()
 {
-	std::cout << name << " delete zombie" << std::endl;
+	std::cout << name << ": AhhhhhhhhhhhhhhhH..." << std::endl;
 }
+
 void Zombie::announce(void)
 {
 	std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
