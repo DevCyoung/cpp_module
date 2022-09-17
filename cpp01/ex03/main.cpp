@@ -5,19 +5,22 @@
 
 int main()
 {
-	Weapon weaponA;
-	weaponA.set_type("gun");
-	HumanA humanA(weaponA);
-	humanA.set_name("yoseo");
+	{
+		Weapon club = Weapon("crude spiked club");
 
+		HumanA bob("Bob", club);
+		bob.attack();
+		club.setType("some ohter type of club");
+		bob.attack();
+	}
+	{
+		Weapon club = Weapon("crude spiked club");
 
-	Weapon weaponB;
-	HumanB humanB;
-	weaponB.set_type("sworld");
-	humanB.set_weapon(weaponB);
-	humanB.set_name("juhylee");
-
-	humanA.attack();
-	humanB.attack();
+		HumanB jim("jim");
+		jim.setWeapon(club);
+		jim.attack();
+		club.setType("some other type of club");
+		jim.attack();
+	}
 	return 0;
 }
