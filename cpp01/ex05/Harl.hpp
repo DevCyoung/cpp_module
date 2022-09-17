@@ -7,7 +7,6 @@ class Harl
 private:
 	void (Harl::*voice[4])(void);
 	std::string levels[4];
-	std::string str_table[4];
 private:
 	void debug(void);
 	void info(void);

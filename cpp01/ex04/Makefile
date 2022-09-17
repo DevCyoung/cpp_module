@@ -1,4 +1,4 @@
-NAME = Moar_brainz
+NAME = replace
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
@@ -19,5 +19,6 @@ clean :
 
 fclean : clean
 	rm -rf $(NAME)
+	rm *.replace
 
 re : fclean all
