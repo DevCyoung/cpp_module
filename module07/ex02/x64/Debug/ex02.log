@@ -1,0 +1,24 @@
+﻿  main.cpp
+C:\Users\tkdlq\Desktop\git_save_point\cpp_module\coo02\module07\ex02\main.cpp(12,10): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\tkdlq\Desktop\git_save_point\cpp_module\coo02\module07\ex02\main.cpp(12,15): warning C4267: '=': 'size_t'에서 'T'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              T=int
+          ]
+C:\Users\tkdlq\Desktop\git_save_point\cpp_module\coo02\module07\ex02\main.cpp(18,23): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\tkdlq\Desktop\git_save_point\cpp_module\coo02\module07\ex02\main.cpp(26,10): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\tkdlq\Desktop\git_save_point\cpp_module\coo02\module07\ex02\main.cpp(32,20): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\tkdlq\Desktop\git_save_point\cpp_module\coo02\module07\ex02\main.cpp(45,20): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\tkdlq\Desktop\git_save_point\cpp_module\coo02\module07\ex02\Array.h(72,21): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\tkdlq\Desktop\git_save_point\cpp_module\coo02\module07\ex02\Array.h(71): message : 클래스 템플릿 멤버 함수 'T &Array<T>::operator [](int)'을(를) 컴파일하는 중입니다.
+          with
+          [
+              T=int
+          ]
+C:\Users\tkdlq\Desktop\git_save_point\cpp_module\coo02\module07\ex02\main.cpp(12): message : 컴파일되는 함수 템플릿 인스턴스화 'T &Array<T>::operator [](int)'에 대한 참조를 확인하세요.
+          with
+          [
+              T=int
+          ]
+C:\Users\tkdlq\Desktop\git_save_point\cpp_module\coo02\module07\ex02\main.cpp(8): message : 컴파일되는 클래스 템플릿 인스턴스화 'Array<int>'에 대한 참조를 확인하세요.
+  ex02.vcxproj -> C:\Users\tkdlq\Desktop\git_save_point\cpp_module\coo02\module07\x64\Debug\ex02.exe
